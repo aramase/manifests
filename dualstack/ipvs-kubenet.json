@@ -19,7 +19,8 @@
                     "--feature-gates": "IPv6DualStack=true"
                 },
                 "kubeletConfig": {
-                    "--feature-gates": "IPv6DualStack=true"
+                    "--feature-gates": "IPv6DualStack=true",
+                    "--hairpin-mode": "hairpin-veth"
                 },
                 "controllerManagerConfig": {
                     "--feature-gates": "IPv6DualStack=true"
