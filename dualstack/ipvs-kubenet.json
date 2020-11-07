@@ -36,13 +36,15 @@
         "masterProfile": {
             "count": 1,
             "dnsPrefix": "",
-            "vmSize": "Standard_D2_v2"
+            "vmSize": "Standard_D2_v2",
+            "distro": "ubuntu"
         },
         "agentPoolProfiles": [
             {
                 "name": "linuxpool1",
                 "count": 2,
-                "vmSize": "Standard_D2_v2"
+                "vmSize": "Standard_D2_v2",
+                "distro": "ubuntu"
             }
         ],
         "linuxProfile": {
