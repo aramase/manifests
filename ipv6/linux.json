@@ -12,7 +12,9 @@
                 "excludeMasterFromStandardLB": true,
                 "networkPlugin": "kubenet",
                 "apiServerConfig": {
-                    "--bind-address": "::"
+                    "--bind-address": "::",
+                    "--service-account-issuer": "kubernetes.default.svc",
+                    "--service-account-signing-key-file": "/etc/kubernetes/certs/apiserver.key"
                 },
                 "kubeletConfig": {
                     "--node-ip": "::"

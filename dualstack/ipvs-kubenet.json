@@ -16,7 +16,9 @@
                 "kubeProxyMode": "ipvs",
                 "networkPlugin": "kubenet",
                 "apiServerConfig": {
-                    "--feature-gates": "IPv6DualStack=true"
+                    "--feature-gates": "IPv6DualStack=true",
+                    "--service-account-issuer": "kubernetes.default.svc",
+                    "--service-account-signing-key-file": "/etc/kubernetes/certs/apiserver.key"
                 },
                 "kubeletConfig": {
                     "--feature-gates": "IPv6DualStack=true",
