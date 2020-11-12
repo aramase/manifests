@@ -22,7 +22,8 @@
                 },
                 "kubeletConfig": {
                     "--feature-gates": "IPv6DualStack=true",
-                    "--hairpin-mode": "hairpin-veth"
+                    "--hairpin-mode": "hairpin-veth",
+                    "--max-pods": "110"
                 },
                 "controllerManagerConfig": {
                     "--feature-gates": "IPv6DualStack=true"

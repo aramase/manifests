@@ -17,7 +17,8 @@
                     "--service-account-signing-key-file": "/etc/kubernetes/certs/apiserver.key"
                 },
                 "kubeletConfig": {
-                    "--node-ip": "::"
+                    "--node-ip": "::",
+                    "--max-pods": "110"
                 },
                 "controllerManagerConfig": {
                     "--bind-address": "::"

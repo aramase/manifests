@@ -21,7 +21,8 @@
                     "--service-account-signing-key-file": "/etc/kubernetes/certs/apiserver.key"
                 },
                 "kubeletConfig": {
-                    "--feature-gates": "IPv6DualStack=true"
+                    "--feature-gates": "IPv6DualStack=true",
+                    "--max-pods": "110"
                 },
                 "controllerManagerConfig": {
                     "--feature-gates": "IPv6DualStack=true"
